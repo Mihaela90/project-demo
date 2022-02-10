@@ -1,0 +1,145 @@
+:root {
+	--white: #fff;
+	--black: #1c2b2d;
+	--blue: #31326f;
+	--light-blue: #37a537;
+	--color-primary: black;
+	--color-secondary: #37a537;
+	--grey: #eee;
+	--dark-grey: #222831;
+}
+
+/* * :not(.sales) {
+box-sizing: border-box;
+} */
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+/*De incercat si urmatoarele:
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+header {
+	background-color: #eee;
+	padding: 1rem;
+}
+
+header h1 {
+	font-size: 3.5rem;
+	line-height: 2;
+	color: var(--color-primary);
+	text-align: center;
+}*/
+
+.hero {
+	background-color: white;
+	position: sticky;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	gap: 50px;
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+nav li {
+	text-decoration: none;
+	list-style: none;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.icons {
+	display: flex;
+	gap: 10px;
+}
+
+.sales {
+	/*margin-top: 50px;
+	margin-bottom: 100px; */
+	height: 100px;
+	background-color: black;
+	text-align: center;
+	color: white;
+	padding: 2rem;
+}
+
+.sales h1 {
+	text-transform: uppercase;
+}
+
+.BrandDescription {
+	padding: 2rem;
+	line-height: 2;
+}
+
+#descriptionBlock {
+	width: 60%;
+	height: auto;
+	margin: auto;
+	font-size: 18px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+	word-wrap: calc(collections);
+}
+
+h2 {
+	/*margin-left: 470px; */
+	text-align: center;
+}
+
+.carousel {
+	margin-left: 15%;
+	padding: 2rem;
+}
+
+.follow {
+	text-align: center;
+}
+.socialmedia {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem;
+}
+
+.info {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	gap: 16px;
+}
+
+footer {
+	padding: 1rem;
+	position: sticky;
+}

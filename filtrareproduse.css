@@ -1,0 +1,104 @@
+body {
+	font-family: AvenirNext, sans-serif;
+	margin: 0;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+}
+h1 {
+	text-align: center;
+}
+
+.columns {
+	display: inline-flex;
+	box-sizing: content-box;
+	border: 1px solid darkgrey;
+	/*width: 100%;*/
+	height: 100%;
+	margin: 10px;
+}
+
+/*.sortDetailsWrapper {
+	display: inline-flex;
+	font-family: AvenirNext, sans-serif;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 300px; */
+}
+
+.sortDetailsWrapper {
+	width: 30%;
+	height: 100%;
+	border: solid, green 1px;
+	margin: 20px; 
+	background-color: azure; /*nu merge */
+}
+
+.productsPhotos {
+	/*width: 100%;*/
+	/*height: 100%;
+	border: solid, red, 10px;
+	margin: 10px;
+	display: inline-block;
+	flex-wrap: wrap; */
+    width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	column-gap: 3rem;
+	row-gap: 3rem;
+}
+
+#store-products {
+	/*border: 1px solid black;
+	display: flex;
+	width: 70%;
+	height: 100%; */
+
+	/*display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	column-gap: 3rem;
+	row-gap: 3rem;*/
+}
+
+
+.containerForms {
+	width: 500px;
+	margin: 30px auto;
+}
+
+.input {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+	border: 2px solid #e9eaea;
+	color: #3e3e40;
+	font-size: 14px;
+	outline: none;
+	transform: all 0.5s ease;
+}
+
+.input:focus {
+	border: 2px solid #34b3a0;
+}
+
+::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #3e3e40;
+	font-family: AvenirNext;
+}
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #3e3e40;
+	font-family: AvenirNext;
+}
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #3e3e40;
+	font-family: AvenirNext;
+}
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: #3e3e40;
+	font-family: AvenirNext;
+}

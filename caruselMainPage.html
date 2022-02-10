@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        padding-top: 100px;
+      }
+
+      .thumbnail {
+        object-fit: cover;
+        max-width: 480px;
+        max-height: 400px;
+        cursor: pointer;
+        opacity: 0.5;
+        margin: 5px;
+        border: 2px solid black;
+      }
+
+      .thumbnail:hover {
+        opacity: 1;
+      }
+
+      .active {
+        opacity: 1;
+      }
+
+      #slide-wrapper {
+        max-width: 1000px;
+        display: flex;
+        min-height: 100px;
+        align-items: center;
+      }
+
+      #slider {
+        width: 920px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      #slider::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      #slider::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+
+      .arrow {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .arrow:hover {
+        opacity: 0.5;
+        width: 35px;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    
+
+        <div id="slide-wrapper">
+          <img
+            id="slideLeft"
+            class="arrow"
+            src="imagini pt carusel/arrow-left.png"
+          />
+
+          <div id="slider">
+            <img
+              class="thumbnail active"
+              src="poze pt proiect/genti/main.page.bags/annie galben.png"
+            />
+            <img
+              class="thumbnail"
+              src="poze pt proiect/genti/main.page.bags/annie gri deschis.png"
+            />
+            <img
+              class="thumbnail"
+              src="poze pt proiect/genti/main.page.bags/annie negru.png"
+            />
+
+            <img
+              class="thumbnail"
+              src="poze pt proiect/genti/main.page.bags/chelsea croco bej.png"
+            />
+            <img
+              class="thumbnail"
+              src="poze pt proiect/genti/main.page.bags/chelsea croco negru.png"
+            />
+            <img
+              class="thumbnail"
+              src="poze pt proiect/genti/main.page.bags/chelsea shopper bej deschis.png"
+            />
+            <img
+              class="thumbnail"
+              src="poze pt proiect/genti/main.page.bags/eda suede gri.png"
+            />
+          </div>
+
+          <img
+            id="slideRight"
+            class="arrow"
+            src="imagini pt carusel/arrow-right.png"
+          />
+        </div>
+      </div>
+
+      
+
+    <script type="text/javascript">
+      let thumbnails = document.getElementsByClassName("thumbnail");
+
+      let activeImages = document.getElementsByClassName("active");
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].addEventListener("mouseover", function () {
+          console.log(activeImages);
+
+          if (activeImages.length > 0) {
+            activeImages[0].classList.remove("active");
+          }
+
+          this.classList.add("active");
+          document.getElementById("featured").src = this.src;
+        });
+      }
+
+      let buttonRight = document.getElementById("slideRight");
+      let buttonLeft = document.getElementById("slideLeft");
+
+      buttonLeft.addEventListener("click", function () {
+        document.getElementById("slider").scrollLeft -= 180;
+      });
+
+      buttonRight.addEventListener("click", function () {
+        document.getElementById("slider").scrollLeft += 180;
+      });
+    </script>
+  </body>
+</html>

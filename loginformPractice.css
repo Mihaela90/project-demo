@@ -1,0 +1,100 @@
+button {
+	background-color: green;
+	color: white;
+	/* margin: auto; */
+
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	text-align: left;
+}
+
+.validationEmail {
+	visibility: hidden;
+}
+
+.container {
+	display: inline-flex;
+	box-sizing: content-box;
+	border: 1px solid darkgrey;
+	background-color: cornsilk;
+}
+/* aici la container am scos width si height pe care le aveam setate pe auto */
+
+div {
+	align-items: center;
+	text-align: center;
+	border: 1px solid red;
+}
+
+.validationEmail .question {
+	color: green;
+}
+
+.columnRight {
+	border: 1px solid blue;
+	height: 400px;
+	width: 500px;
+}
+
+.eml {
+	/*	padding-left: 100px; - incercare nereusita de a muta textul in linie cu butonul - daca fac asta se muta si butonul mai in interior, nu doar textul */
+}
+
+#em,
+#pw,
+#buttonRight {
+	height: 30px;
+	width: 300px;
+}
+
+#buttonRight {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#eAddress,
+#pwRight {
+	/*	display: inline-block;
+	padding-left: 100px;  - incercare nereusita de a muta textul in linie cu butonul*/
+	padding-left: 95px; /* daca p este un element inline care nu accepta margins si padding, de ce a mers paddingul acum? */
+}
+
+#buttonLeft {
+	margin-top: 10px;
+	text-align: center;
+	height: 30px;
+	width: 200px;
+}
+
+.columnLeft {
+	border: 1px solid blue;
+	height: 400px;
+	width: 500px;
+	background-image: url("https://www.spotthewatch.com/wp-content/uploads/2020/06/Luxury-men-watch.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	position: relative;
+	/* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); it doesnt't work because it doesn't cover the background image with a black layer. Maybe There is a property to set this layer over the image, that I am missing here? */
+}
+
+.layer {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.contentLeft {
+	margin: auto; /*nu functioneaza ca sa duca acest div in mijlocul .columnLeft */
+	text-align: center;
+	margin-top: 25%;
+}
