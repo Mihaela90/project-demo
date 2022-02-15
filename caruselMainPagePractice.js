@@ -25,3 +25,41 @@ let thumbnails = document.getElementsByClassName("thumbnail");
 			buttonRight.addEventListener("click", function () {
 				document.getElementById("slider").scrollLeft += 180;
 			});
+
+
+
+			let buttonRight = document.getElementById("slideRight1");
+			let buttonLeft = document.getElementById("slideLeft1");
+
+			buttonLeft.addEventListener("click", function () {
+				document.getElementById("slider1").scrollLeft -= 180;
+			});
+
+			buttonRight.addEventListener("click", function () {
+				document.getElementById("slider1").scrollLeft += 180;
+			});
+
+
+			let buttonRight = document.getElementById("slideRight2");
+			let buttonLeft = document.getElementById("slideLeft2");
+
+			buttonLeft.addEventListener("click", function () {
+				document.getElementById("slider2").scrollLeft -= 180;
+			});
+
+			buttonRight.addEventListener("click", function () {
+				document.getElementById("slider2").scrollLeft += 180;
+			});
+
+
+			let buttonRight = document.getElementById("slideRight3");
+			let buttonLeft = document.getElementById("slideLeft3");
+
+			buttonLeft.addEventListener("click", function () {
+				document.getElementById("slider3").scrollLeft -= 180;
+			});
+
+			buttonRight.addEventListener("click", function () {
+				document.getElementById("slider3").scrollLeft += 180;
+			});
+

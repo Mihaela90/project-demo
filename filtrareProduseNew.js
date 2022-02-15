@@ -45,14 +45,22 @@ const search = document.getElementbyId("search");
 search.addEventListener("keyup", (e) => {
 	e.preventDefault();
 	const searchValue = search.value.toLowerCase().trim();
+	const allProducts = document.querySelectorAll("#store-products");
 
-	for (i = 0; i < store - products.length; i++) {
-		if (store - products[i].classList.contains(searchValue)) {
-			store - products[i].style.display == "block";
+	for (i = 0; i < allProducts.length; i++) {
+		if (allProducts[i].classList.contains(searchValue)) {
+			allProducts[i].style.display == "block";
 		} else if (searchValue == "") {
-			store - products[i].style.display == "block";
+			allProducts[i].style.display == "block";
 		} else {
-			store - products[i].style.display == "none";
+			allProducts[i].style.display == "none";
 		}
 	}
 });
+
+/*var allProducts = document.querySelectorAll("#store-products");
+
+[15:42, 15/02/2022] Marius Catalin POPUSOI: pai trebuie luate elementele cu acea clasa
+[15:43, 15/02/2022] Marius Catalin POPUSOI: deci trebuie sa folosesti un querySelectorAll
+[15:43, 15/02/2022] Marius Catalin POPUSOI: sa stochezi intr-o variabila
+[15:43, 15/02/2022] Marius Catalin POPUSOI: si acea variabila sa fie folosita in for */
