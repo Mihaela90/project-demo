@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: AvenirNext, sans-serif;
 }
 
 p {
@@ -78,9 +78,28 @@ main {
 
 .sortingDetails {
 	max-width: 200px;
+	padding-left: 10px;
 }
+
+.sortingDetails h2 {
+	padding-bottom: 20px;
+}
+
+.sortingDetails label {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sortingDetails input {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5px;
+	margin: 3px;
+}
+
 .slide-container {
-	flex: 1;
+	/*flex: 1; */
 }
 
 .container {
@@ -94,6 +113,7 @@ main {
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	column-gap: 3rem;
 	row-gap: 3rem;
+	flex: 1;
 }
 
 .store-product {
@@ -137,7 +157,7 @@ img {
 }
 
 .product-details a {
-	font-family: "Roboto", sans-serif;
+	font-family: AvenirNext, sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	background-color: var(--color-secondary);

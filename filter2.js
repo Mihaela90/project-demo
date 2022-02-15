@@ -1,5 +1,5 @@
-const btns = document.querySelectorAll(".btn");
-const storeProducts = document.querySelectorAll(".store-product");
+const btns = document.querySelectorAll("btn");
+const storeProducts = document.querySelectorAll("storeProduct");
 
 for (i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", (e) => {
@@ -8,7 +8,7 @@ for (i = 0; i < btns.length; i++) {
 		const filter = e.target.dataset.filter;
 		// console.log(filter)
 		storeProducts.forEach((product) => {
-			if (filter == "all") {
+			if (filter === "all") {
 				product.style.display = "block";
 			} else {
 				if (product.classList.contains(filter)) {
@@ -49,7 +49,7 @@ search.addEventListener("keyup", (e) => {
 	for (i = 0; i < storeProducts.length; i++) {
 		if (storeProducts[i].classList.contains(searchValue)) {
 			storeProducts[i].style.display = "block";
-		} else if (searchValue == "") {
+		} else if (searchValue === "") {
 			storeProducts[i].style.display = "block";
 		} else {
 			storeProducts[i].style.display = "none";

@@ -47,12 +47,12 @@ search.addEventListener("keyup", (e) => {
 	const searchValue = search.value.toLowerCase().trim();
 
 	for (i = 0; i < store - products.length; i++) {
-		if (store-products[i].classList.contains(searchValue)) {
-			store-products[i].style.display == "block";
+		if (store - products[i].classList.contains(searchValue)) {
+			store - products[i].style.display == "block";
 		} else if (searchValue == "") {
-			store-products[i].style.display == "block";
+			store - products[i].style.display == "block";
 		} else {
-			store-products[i].style.display == "none";
+			store - products[i].style.display == "none";
 		}
 	}
 });

@@ -80,14 +80,14 @@ form input {
 	background-color: var(--color-primary);
 }
 
-#store-products {
+#storeProducts {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	column-gap: 3rem;
 	row-gap: 3rem;
 }
 
-.store-product {
+.storeProduct {
 	flex: 0 0 auto;
 	object-fit: cover;
 	cursor: pointer;
