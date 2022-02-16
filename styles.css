@@ -14,7 +14,7 @@ box-sizing: border-box;
 } */
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: AvenirNext, sans-serif;
 }
 
 /*De incercat si urmatoarele:
@@ -96,6 +96,10 @@ nav li {
 .BrandDescription {
 	padding: 2rem;
 	line-height: 2;
+	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.masterclass.com%2Farticles%2Ftypes-of-purses&psig=AOvVaw1Of1t-aHhDF0EMqipcUNRg&ust=1645105341209000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiAndWthPYCFQAAAAAdAAAAABAF");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #descriptionBlock {
