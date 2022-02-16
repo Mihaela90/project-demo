@@ -41,6 +41,13 @@ header h1 {
 	text-align: center;
 }
 
+.icons {
+	display: flex;
+	gap: 10px;
+	text-decoration: none;
+	text-transform: none;
+}
+
 form input {
 	width: 30rem;
 	padding: 1rem;
