@@ -35,3 +35,6 @@ function getInfo() {
 	}
 	console.log("Incorrect username or password");
 }
+
+
+a: visited = ""

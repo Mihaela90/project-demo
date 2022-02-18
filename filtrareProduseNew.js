@@ -25,7 +25,7 @@ for (i = 0; i < btns.length; i++) {
 
 /* Search filter */
 
-const search = document.getElementbyId("search");
+const search = document.getElementById("search");
 
 search.addEventListener("keyup", (e) => {
 	e.preventDefault();
