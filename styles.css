@@ -1,8 +1,6 @@
 :root {
 	--white: #fff;
 	--black: #1c2b2d;
-	--blue: #31326f;
-	--light-blue: #37a537;
 	--color-primary: black;
 	--color-secondary: #37a537;
 	--grey: #eee;
@@ -15,8 +13,14 @@ box-sizing: border-box;
 
 body {
 	font-family: AvenirNext, sans-serif;
+	font-size: 14px;
+	/*line-height: 25px; */
 }
 
+p {
+	font-family: AvenirNext, sans-serif;
+	font-size: 14px;
+}
 /*De incercat si urmatoarele:
 
 
@@ -63,21 +67,26 @@ nav ul {
 	list-style: none;
 	gap: 50px;
 	color: black;
-	font-size: 18px;
+	/*font-size: 18px;*/
 	text-decoration: none;
 }
 
-nav li {
+nav a {
 	text-decoration: none;
 	list-style: none;
 	color: black;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .icons {
 	display: flex;
-	gap: 10px;
+	gap: 15px;
+	color: black;
+}
+
+.icons a {
 	text-decoration: none;
 	text-transform: none;
 }
@@ -92,42 +101,75 @@ nav li {
 	padding: 2rem;
 }
 
-.sales h1 {
+.sales h2 {
 	text-transform: uppercase;
+	text-align: center;
+}
+
+.sales p {
+	font-weight: bold;
 }
 
 .BrandDescription {
 	padding: 2rem;
 	line-height: 2;
-	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.masterclass.com%2Farticles%2Ftypes-of-purses&psig=AOvVaw1Of1t-aHhDF0EMqipcUNRg&ust=1645105341209000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiAndWthPYCFQAAAAAdAAAAABAF");
+	background-image: url("https://i.insider.com/54f6166e69bedd537cd2375d?width=1200&format=jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+	height: 350px;
+
+	https: ; //cdn.shopify.com/s/files/1/0373/1177/4858/products/CINDY-WHITECROC_800x.jpg?v=1621495509
+}
+
+.layer {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #descriptionBlock {
-	width: 60%;
+	width: 50%;
 	height: auto;
 	margin: auto;
 	font-size: 18px;
+	font-weight: bolder;
+}
+
+#descriptionBlock p {
+	color: #222831;
 }
 
 h1 {
 	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-transform: uppercase;
 }
 
 h4 {
 	word-wrap: calc(collections);
 }
 
-h2 {
+.carousel h2 {
 	/*margin-left: 470px; */
-	text-align: center;
+	/*text-align: center; */
+	margin-left: 480px;
 }
 
 .carousel {
 	margin-left: 15%;
 	padding: 2rem;
+}
+
+.bags {
+	margin-bottom: 100px;
 }
 
 .follow {
@@ -146,6 +188,22 @@ h2 {
 	gap: 16px;
 }
 
-footer {
+.footer {
 	padding: 1rem;
+	background-color: black;
+	color: white;
+}
+
+.footer ul li a {
+	color: white;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	text-decoration: none;
+	list-style: none;
+	color: black;
 }

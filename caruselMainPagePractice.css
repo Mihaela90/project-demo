@@ -1,7 +1,7 @@
 /*comentariile au legatura cu comparatia codului cu cel din filter2.html si css. */
 
 body {
-	padding-top: 100px;
+	/*padding-top: 100px; */
 }
 
 article {
@@ -94,7 +94,7 @@ button {
 	background-color: #1d5c1d;
 	border-radius: 3px;
 	color: white;
-	font-family: Roboto, sans-serif;
+	font-family: AvenirNext, sans-serif;
 }
 
 .thumbnail:hover {

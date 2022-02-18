@@ -3,10 +3,29 @@ body {
 	margin: 0;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 15px;
 }
+
+a {
+	font-size: 15px;
+	font-family: AvenirNext, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	padding-top: 100px;
+	margin-left: 100px;
+}
+
+.back {
+	padding-top: 100px;
+	margin-left: 100px;
+
+}
+
+
 h1 {
 	text-align: center;
+	margin-top: 100px;
 }
 
 .userFormsWrapper {
@@ -14,7 +33,7 @@ h1 {
 	font-family: AvenirNext, sans-serif;
 	align-items: center;
 	justify-content: center;
-	margin: 50px 300px;
+	margin: 50px 200px;
 }
 
 .containerForms {
@@ -23,7 +42,19 @@ h1 {
 }
 .helpUser {
 	width: 500px;
-	margin: 30px auto;
+	/*margin: 30px auto; */
+	padding-bottom: 210px;
+	margin-left: 70px;
+}
+
+.helpUser img {
+	width: 500px;
+	height: 395px;
+	padding-bottom: 30px;
+}
+
+.helpUser .helpGuide {
+	/*margin-bottom: 30px; */
 }
 
 .subscribe {
@@ -44,7 +75,7 @@ h1 {
 .subscribeInput {
 	width: 500px;
 	margin: 30px auto;
-	background-color: black; /*nu merge*/
+	/* background-color: black; nu merge*/
 }
 
 .signup,
@@ -82,7 +113,7 @@ h1 {
 }
 
 .input:focus {
-	border: 2px solid #34b3a0;
+	border: 2px solid #37a537;
 }
 
 .btn {
