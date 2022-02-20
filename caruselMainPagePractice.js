@@ -20,42 +20,42 @@ let buttonRight = document.getElementById("slideRight");
 let buttonLeft = document.getElementById("slideLeft");
 
 buttonLeft.addEventListener("click", function () {
-	document.getElementById("slider").scrollLeft -= 180;
+	document.getElementById("slider").scrollLeft -= 280;
 });
 
 buttonRight.addEventListener("click", function () {
-	document.getElementById("slider").scrollLeft += 180;
+	document.getElementById("slider").scrollLeft += 280;
 });
 
 let buttonRight1 = document.getElementById("slideRight1");
 let buttonLeft1 = document.getElementById("slideLeft1");
 
 buttonLeft1.addEventListener("click", function () {
-	document.getElementById("slider1").scrollLeft -= 180;
+	document.getElementById("slider1").scrollLeft -= 280;
 });
 
 buttonRight1.addEventListener("click", function () {
-	document.getElementById("slider1").scrollLeft += 180;
+	document.getElementById("slider1").scrollLeft += 280;
 });
 
 let buttonRight2 = document.getElementById("slideRight2");
 let buttonLeft2 = document.getElementById("slideLeft2");
 
 buttonLeft2.addEventListener("click", function () {
-	document.getElementById("slider2").scrollLeft -= 180;
+	document.getElementById("slider2").scrollLeft -= 280;
 });
 
 buttonRight2.addEventListener("click", function () {
-	document.getElementById("slider2").scrollLeft += 180;
+	document.getElementById("slider2").scrollLeft += 280;
 });
 
 let buttonRight3 = document.getElementById("slideRight3");
 let buttonLeft3 = document.getElementById("slideLeft3");
 
 buttonLeft3.addEventListener("click", function () {
-	document.getElementById("slider3").scrollLeft -= 180;
+	document.getElementById("slider3").scrollLeft -= 280;
 });
 
 buttonRight3.addEventListener("click", function () {
-	document.getElementById("slider3").scrollLeft += 180;
+	document.getElementById("slider3").scrollLeft += 280;
 });

@@ -24,37 +24,50 @@
                     <div class="containerForms">
                         <div class="signup">Sign Up</div>
                         <div class="login">Log In</div>
+                        <form onsubmit="signUpFunc()" id="signUpForm">
+                          <div class="signup-form">
+                            <input
+                              type="text"
+                              placeholder="Your Email Address"
+                              class="input"
+                              id="suEmail"
+                              name="email"
+                            /><br />
+                            <input
+                              type="text"
+                              placeholder="Choose a Username"
+                              class="input"
+                              id="suUsername"
+                              name="username"
+                            /><br />
+                            <input
+                              type="password"
+                              placeholder="Choose a Password"
+                              class="input"
+                              id="suPassword"
+                              name="password"
+                            /><br />
+                            <button type="submit" class="btn" id="submitNewUserInfo">Create account</button>
+                          </div>
+
+                        </form>
+                        <form onsubmit="logInFunc()" id="logInForm">
+                          <div class="login-form">
+                            <input
+                              type="text"
+                              placeholder="Email or Username"
+                              class="input"
+                              id = "email username"
+                            /><br />
+                            <input type="password" placeholder="Password" class="input" id="password" /><br />
+                            <button type="submit" class="btn" onclick="/*A function*/" id="loginButton">log in</button>
+                            <span><a href="#">I forgot my username or password.</a></span>
+                            <p id="result">Welcome, Login...</p>
+                          </div>
+
+                        </form>
                 
-                        <div class="signup-form">
-                          <input
-                            type="text"
-                            placeholder="Your Email Address"
-                            class="input"
-                          /><br />
-                          <input
-                            type="text"
-                            placeholder="Choose a Username"
-                            class="input"
-                          /><br />
-                          <input
-                            type="password"
-                            placeholder="Choose a Password"
-                            class="input"
-                          /><br />
-                          <div class="btn">Create account</div>
-                        </div>
-                
-                        <div class="login-form">
-                          <input
-                            type="text"
-                            placeholder="Email or Username"
-                            class="input"
-                            id = "username"
-                          /><br />
-                          <input type="password" placeholder="Password" class="input" id="password" /><br />
-                          <button class="btn" onclick="getInfo()">log in</button>
-                          <span><a href="#">I forgot my username or password.</a></span>
-                        </div>
+    
                     </div>
                     <div class="helpUser">
                         <img src="backgound purses/bg8.jpg" alt=""/>
