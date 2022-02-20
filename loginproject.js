@@ -27,8 +27,7 @@ const listOfUsers = [
 	},
 ];  */
 
-
-const welcomeUser = document.getElementById("welcomeUser"); 
+const welcomeUser = document.getElementById("welcomeUser");
 const username = document.getElementById("username").value;
 const password = document.getElementById("password").value;
 const loginButton = document.getElementById("loginButton");
@@ -46,11 +45,17 @@ function onsubmit() {
 	);
 
 	if (foundUser) {
-		localStorage.setItem("loggedInUser", JSON.stringify(foundUser)); 
+		localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
 		location.href = "/index.html";
-
 	} else {
 		console.log("Incorrect username or password");
 	}
 }
 
+/*Logout*/
+
+const handleLogout = () => {
+	window.localStorage.clear();
+	window.location.reload(true);
+	window.location.replace("/index.html");
+};
