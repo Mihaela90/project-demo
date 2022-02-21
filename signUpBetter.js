@@ -4,19 +4,23 @@ const suPassword = document.getElementById("suPassword").value;
 /*const submitNewUserInfo = document.getElementById("submitNewUserInfo"); - this gets the same element as const signUpButton which is clearer*/
 const suForm = document.querySelector(".signUpForm");
 const signUpBtn = suForm.querySelector("button");
+const result = document.getElementById("result").value;
 
 if (suEmail.length === 0) {
-	console.log("Incorrect Email");
+	/*console.log("Incorrect Email");*/
+	result.textContent = "Incorrect email";
 	return;
 }
 
 if (suUsername.length === 0) {
-	console.log("Incorrect Username");
+	/*console.log("Incorrect Username");*/
+	result.textContent = "Incorrect username";
 	return;
 }
 
 if (suPassword.length === 0) {
-	console.log("Incorrect Password");
+	/*console.log("Incorrect Password");*/
+	result.textContent = "Incorrect password";
 	return;
 }
 

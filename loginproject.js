@@ -48,14 +48,15 @@ function onsubmit() {
 		localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
 		location.href = "/index.html";
 	} else {
-		console.log("Incorrect username or password");
+		/*console.log("Incorrect username or password");*/
+		result.textContent = "Incorrect username or password";
 	}
 }
 
 /*Logout*/
 
 const handleLogout = () => {
-	window.localStorage.clear();
+	window.localStorage.removeItem();
 	window.location.reload(true);
 	window.location.replace("/index.html");
 };
